@@ -1,0 +1,47 @@
+﻿# Ambiente Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+
+# Cache
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Segredos
+.env
+.env.*
+.streamlit/secrets.toml
+
+# Dados e datasets
+data/
+
+# Modelos antigos
+models/*
+!models/detector_cic_ids2017.joblib
+!models/detector_cic_ids2017_sem_porta.joblib
+!models/detector_cic_ids2017_sem_porta_sem_janelas.joblib
+!models/detector_cic_ids2017_sem_porta_sem_janelas_150.joblib
+
+# Relatórios antigos
+auditoria_ctu13.txt
+RELATORIO_EXPERIMENTOS.md
+
+# Scripts de experimentos anteriores
+src/*
+
+# Scripts do experimento CIC-IDS2017 / ARES
+!src/auditar_cic_ids2017.py
+!src/auditar_duplicatas_cic_ids2017.py
+!src/mapear_colunas_duplicadas_cic_ids2017.py
+!src/preparar_cic_ids2017.py
+!src/separar_cic_ids2017.py
+!src/treinar_cic_ids2017.py
+!src/avaliar_cic_ids2017.py
+!src/diagnosticar_porta_destino.py
+!src/comparar_modelo_sem_porta.py
+!src/comparar_modelo_sem_janelas.py
+!src/testar_150_arvores.py
+!src/importancia_features_cic_ids2017.py
+!src/auditar_janela_tcp_cic.py
